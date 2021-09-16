@@ -1,0 +1,272 @@
+/*
+font-family: 'Public Sans', sans-serif;
+hsl(233, 8%, 62%); grey p a
+hsl(0, 0%, 98%) bg grey
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  }
+  #fondo2 {
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 360% 120%;
+    height: 112vh;
+  }
+p {
+color:  hsl(233, 8%, 62%);
+}
+
+#fondo1 {
+background-image: url("../images/bg.png");
+height: 112vh;
+background-repeat: no-repeat;
+background-position: right;
+}
+header {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+header ul {
+  display: flex;
+  list-style: none;
+
+}
+
+header ul a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+}
+
+.hightlight {
+max-width: 93px;
+background-color: #20bf55;
+background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+padding: 0.5rem 1rem;
+
+border-radius: 30px;
+text-decoration: none;
+color: #fff;
+
+}
+.icon {
+  display: none;
+}
+/* */
+main {
+  max-width: 100%;
+  width: 1200px;
+  margin: 9rem auto;
+}
+main .content {
+  max-width: 450px;
+}
+main .header {
+  padding: 1.5rem 0;
+}
+main h1 {
+  font-size: 3rem;
+  font-family: 'Public Sans', sans-serif;
+  margin: 0;
+  color: hsl(233, 26%, 24%);
+}
+main p {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 300;
+  color: hsl(233, 8%, 62%);
+}
+
+ /*main2*/
+ .bg {
+   background-color: hsl(0, 0%, 98%);
+ }
+ .main2 {
+   height: 100vh;
+   max-width: 100%;
+   width: 1200px;
+   margin: auto;
+   font-family: 'Public Sans', sans-serif;
+ }
+.main2 h1 {
+ padding-top: 7rem;
+ color: hsl(233, 26%, 24%);
+}
+.main2 .content2 {
+  max-width: 600px;
+}
+.grid {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  grid-gap: 5rem;
+  margin-top: 10rem;
+}
+ .item {
+   max-width: 250px;
+ }
+ .item h2 {
+   color: hsl(233, 26%, 24%);
+ }
+ .item2 {
+   max-width: 250px;
+ }
+ .item2 h2 {
+   color: hsl(233, 26%, 24%);
+ }
+ .item2 > img {
+   display: block;
+   width: 100%;
+ }
+ /*main 3 */
+ .main3 {
+   max-width: 100%;
+   width: 1200px;
+   margin: 3rem auto;
+   font-family: 'Public Sans', sans-serif;
+
+ }
+
+ .main3 h1 {
+  color: hsl(233, 26%, 24%);
+ }
+.color {
+  background-color: #1f1f1f;
+
+}
+.footer {
+  max-width: 100%;
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+
+}
+
+.logo-icons {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+
+.icons img {
+  cursor: pointer;
+}
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li a {
+  color: hsl(233, 8%, 62%);
+  text-decoration: none;
+  padding: 1rem 0;
+
+}
+.footer ul li {
+  margin-top: 1rem;
+}
+.footer .hightlight2 {
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  cursor: pointer;
+}
+.Rights {
+  margin-right: 0;
+}
+
+.hov:hover {
+  border-bottom: 3px solid hsl(136, 65%, 51%);
+}
+
+.item2 h2:hover{
+  color: hsl(136, 65%, 51%);
+  cursor: pointer;
+}
+
+.f a:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+/*mobile*/
+@media only screen and (max-width: 600px) {
+  body {
+
+     text-align: center;
+
+     width: 100%;
+     width: 0 auto;
+     width: 100vh;
+     max-width: none;
+  }
+
+  .content {
+    position: relative;
+    z-index: 99;
+    top: 33rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .content2 {
+    margin-bottom: 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 0;
+  }
+
+  .item {
+    position: relative;
+  }
+.item2 {
+  margin: 20rem 0;
+  padding-top: 3rem;
+  position: relative;
+}
+  .content h1 {
+    font-size: 2rem;
+  }
+  .content2 {
+    margin-top: 10rem;
+  }
+  header {
+    width: 100vh;
+  }
+  #fondo2 {
+    background-position: center;
+    display: grid;
+  }
+  #fondo1 {
+    width: 100vh;
+  }
+}
